@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 201-01 practice</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 320px;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            line-height: 1.6;
+            color: black;
+            background-color: white;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: indianred;
+        }
+
+        .header-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1 {
+            color: antiquewhite;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1 rem;   
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        @media (min-width: 600px) {
+            .header-container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+    
+        h1 {
+            margin-bottom: 0 1;
+           }
+        }
+
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>Test Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-container container"></div>
+    </main>
+    <footer>
+        <div class="footer-container container"></footer></div>
+    </footer>
+    <script>
+        console.log("I can confirm that this log has logged");
+
+        let user;
+        let myFavTarot;
+        let card;
+
+        alert("Hi, I am Yaga. Welcome to my site!");
+
+        function userName () {
+            user = prompt("Please tell me your name so we can get to know each other");
+            alert("Welcome to my site " + user);
+            console.log(user);
+        }
+
+        userName();
+
+        function favTarot(); {
+            card = prompt(user + " , what tarot car would like to ask for an advice").toLowerCase();
+            console.log(card);
+
+            if (card === "The Emperor") {
+                myFavTarot = "The Fool";
+            } else  if (card === "Strength") {
+                myFavTarot = "Death";
+            } else {
+                myFavTarot = "The Empress";
+            }
+              
+            alert(" " + card + "is a very powerful card. My favourite card is " + myFavTarot);
+        }
+
+        favTarot();
+    </script>
+</body>
+</html>
