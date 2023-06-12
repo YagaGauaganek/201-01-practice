@@ -93,14 +93,14 @@
 
         function userName () {
             user = prompt("Please tell me your name so we can get to know each other");
-            alert("Welcome to my site " + user);
+            alert("Welcome to my site " + user "!");
             console.log(user);
         }
 
         userName();
 
-        function favTarot(); {
-            card = prompt(user + " , what tarot car would like to ask for an advice").toLowerCase();
+        function favTarot() {
+            card = prompt(user + " , which Tarot Card would like to ask for an advice?").toLowerCase();
             console.log(card);
 
             if (card === "The Emperor") {
@@ -111,7 +111,7 @@
                 myFavTarot = "The Empress";
             }
               
-            alert(" " + card + "is a very powerful card. My favourite card is " + myFavTarot);
+            alert(" " + card + " is a very powerful card. My favourite card is " + myFavTarot);
         }
 
         favTarot();
