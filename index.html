@@ -102,7 +102,7 @@
     </header>
     <main>
         <div class="main-container container"></div>
-        <h2> My Favourit Tarot Cards - Reider Waite Tarot Card Deck</h2>
+        <h2> My Favourite Tarot Cards - Reider Waite Tarot Card Deck</h2>
         <img src="images/Fool.jpg" alt="0 Fool - Tarot Card" class="center"/>
         <p>'The Fool represents new beginnings, having faith in the future, being inexperienced, 
             not knowing what to expect, having beginner's luck, improvisation and believing in the universe.'</p>
@@ -133,7 +133,7 @@
         let user;
         let myFavTarot;
         let card;
-
+       
         alert("Hi, I am Yaga. Welcome to my site!");
 
         function userName() {
@@ -158,8 +158,27 @@
               
             alert(" " + card + " is a very powerful card. My favourite card is " + myFavTarot);
         }
-
         favTarot();
+
+        let chakra;
+        let number;
+        let color;
+        let crystal;
+        
+        function myMagic() {
+            
+        chakra = prompt("What chakra is your favourite?");
+            alert = ("Your " + chakra + "is one of 5 of spinning discs of your energy.");
+            console.log(chakra)
+        number = prompt("What is your favourite number?");
+            alert = (number + " brings a great meaning!");
+        color = prompt("What is your favourite colour?");
+            alert = ("Every color can have huge influence on our moods. Do you know what influence have " + color + "on you?");
+        crystal = prompt("What is your favourite healing crystal?");
+            alert = ("Wow!" + crystal + " will definitely heal your soul! My favourite is sapphire");
+        
+        }
+        myMagic()
     </script>
 </body>
 </html>
