@@ -142,15 +142,13 @@
             console.log(user);
         }
 
-        userName();
-
         function favTarot() {
             card = prompt(user + " , which Tarot Card would like to ask for an advice?").toLowerCase();
             console.log(card);
 
-            if (card === "The Emperor") {
+            if (card === "the emperor") {
                 myFavTarot = "The Fool";
-            } else  if (card === "Strength") {
+            } else  if (card === "strength") {
                 myFavTarot = "Death";
             } else {
                 myFavTarot = "The Empress";
@@ -166,13 +164,16 @@
         let crystal;
         
         chakra = prompt("What chakra is your favourite?");
-            alert = ("Your " + chakra + "is one of 5 of spinning discs of your energy.");
+            alert("Your " + chakra + "is one of 5 of spinning discs of your energy.");
         number = prompt("What is your favourite number?");
-            alert = (number + " brings a great meaning!");
+            alert(number + " brings a great meaning!");
         color = prompt("What is your favourite colour?");
-            alert = ("Every color can have huge influence on our moods. Do you know what influence have " + color + "on you?");
+            alert("Every color can have huge influence on our moods. Do you know what influence have " + color + "on you?");
         crystal = prompt("What is your favourite healing crystal?");
-            alert = ("Wow!" + crystal + " will definitely heal your soul! My favourite is sapphire")
+            alert("Wow!" + crystal + " will definitely heal your soul! My favourite is sapphire");
+
+        //alert("Combination of your " + chakra + ", " + number + ", " + color + "and " + crystal + "may help to balance your cosmic energy, " + user + " !");
+        
     </script>
 </body>
 </html>
